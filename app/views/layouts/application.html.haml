@@ -1,0 +1,39 @@
+!!! 5
+=html do
+  %title Anagram solver...
+  %head
+  
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    -if current_user
+      = javascript_include_tag "anagram"
+    = csrf_meta_tags
+
+  %body
+    
+    #logo-ball{title: 'Solving the anogram...'}
+
+    %nav.navbar.navbar-fixed-top{role: 'navigation'}
+      .navbar-header.pull-left
+        -if current_user
+          .navbar-brand.logo
+            Anagram solver
+        
+      -if current_user
+        .navbar-collapse
+          .row-fluid.header-row2.login-bar.pull-right
+            %fieldset.login
+              =link_to 'Logout', logout_path
+
+      =render :partial => '/shared/login'
+    
+    -if current_user.nil?
+      %header    
+        .row 
+          %h1.top
+            Anagram solver
+
+    -if current_user        
+      .container
+        .jumbotron
+          =yield

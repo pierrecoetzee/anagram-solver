@@ -1,0 +1,11 @@
+
+- if current_user.nil?
+  .navbar-collapse
+    .row-fluid.header-row2.login-bar.pull-right
+      %fieldset.login
+
+        =form_for 'user', {url: authenticate_path} do |f|
+          =f.text_field :user_name, placeholder: 'user name', type: 'text'
+          =f.text_field :password, placeholder: 'password', type: 'password'
+          =f.submit 'Login', class: 'btn btn-primary submit-login'
+

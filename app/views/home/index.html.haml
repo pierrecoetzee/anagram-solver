@@ -1,0 +1,10 @@
+%main
+  .content
+    .control-group
+      =form_for 'anagram', {url: anagram_path, method: 'get', remote: true , html: {'data-type' => 'json' } } do |f|
+        .control-group
+          =f.text_field 'word', :required => 'true', placeholder: 'search term', 'x-moz-errormessage' => 'Required search term'
+          =f.submit 'Find anagrams', class: 'btn btn-primary btn-sm'
+
+        .control-group
+          #results          
