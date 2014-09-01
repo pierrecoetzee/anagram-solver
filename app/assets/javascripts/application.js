@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require anagram
 //= require bootstrap
+//= require_tree .
