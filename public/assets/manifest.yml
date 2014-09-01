@@ -5,8 +5,8 @@ bg.png: bg-2d2a2d64f06a24bba8a985e4fe0fe9c0.png
 bg/index.png: bg-2d2a2d64f06a24bba8a985e4fe0fe9c0.png
 wordcloud.png: wordcloud-cc05ddef80587e4218304e5288b54cbb.png
 wordcloud/index.png: wordcloud-cc05ddef80587e4218304e5288b54cbb.png
-application.js: application-25b9a552287d53723b40293bd85a4fa7.js
-application/index.js: application-25b9a552287d53723b40293bd85a4fa7.js
+application.js: application-e8ed4625c16364ccec90d140f5f11779.js
+application/index.js: application-e8ed4625c16364ccec90d140f5f11779.js
 application.css: application-4dba118dcf4eaf110c3a1351a7c7bef0.css
 application/index.css: application-4dba118dcf4eaf110c3a1351a7c7bef0.css
 jquery.min.map: jquery.min-e146c025d6a36461812bc97143056bd3.map
